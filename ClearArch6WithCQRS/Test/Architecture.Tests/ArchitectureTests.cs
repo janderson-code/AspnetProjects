@@ -32,7 +32,7 @@ public class ArchitectureTests
             .GetResult();
 
         //Assert
-        testResult.IsSuccessful.Should().BeTrue();
+        Assert.True(testResult.IsSuccessful);
     }
 
     [Fact]
@@ -56,7 +56,7 @@ public class ArchitectureTests
             .GetResult();
 
         //Assert
-        testResult.IsSuccessful.Should().BeTrue();
+        Assert.True(testResult.IsSuccessful);
     }
 
     [Fact]
@@ -79,7 +79,7 @@ public class ArchitectureTests
             .GetResult();
 
         //Assert
-        testResult.IsSuccessful.Should().BeTrue();
+        Assert.True(testResult.IsSuccessful);
     }
 
     [Fact]
@@ -102,6 +102,6 @@ public class ArchitectureTests
             .GetResult();
 
         //Assert
-        testResult.IsSuccessful.Should().BeTrue();
+       Assert.True(testResult.IsSuccessful);
     }
 }
