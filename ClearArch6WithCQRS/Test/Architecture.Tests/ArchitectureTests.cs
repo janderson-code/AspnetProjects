@@ -9,7 +9,7 @@ public class ArchitectureTests
     private const string InfraNameSpace = "Infrastructure";
     private const string PresentationNameSpace = "Presentation";
     private const string WebNameSpace = "Web";
-    
+
     [Fact]
     public void Domain_ShouldNot_HaveDependencyOnOtherProjects()
     {
@@ -32,9 +32,9 @@ public class ArchitectureTests
             .GetResult();
 
         //Assert
-         //testResult.IsSuccessful.Should().BeTrue();
-        
+        testResult.IsSuccessful.Should().BeTrue();
     }
+
     [Fact]
     public void Application_ShouldNot_HaveDependencyOnOtherProjects()
     {
@@ -56,9 +56,9 @@ public class ArchitectureTests
             .GetResult();
 
         //Assert
-      //  testResult.IsSuccessful.Should().BeTrue();
-        
+        testResult.IsSuccessful.Should().BeTrue();
     }
+
     [Fact]
     public void Infrastructure_ShouldNot_HaveDependencyOnOtherProjects()
     {
@@ -79,9 +79,9 @@ public class ArchitectureTests
             .GetResult();
 
         //Assert
-        //  testResult.IsSuccessful.Should().BeTrue();
-        
+        testResult.IsSuccessful.Should().BeTrue();
     }
+
     [Fact]
     public void Presentantion_ShouldNot_HaveDependencyOnOtherProjects()
     {
@@ -102,7 +102,6 @@ public class ArchitectureTests
             .GetResult();
 
         //Assert
-        //  testResult.IsSuccessful.Should().BeTrue();
-        
+        testResult.IsSuccessful.Should().BeTrue();
     }
 }
